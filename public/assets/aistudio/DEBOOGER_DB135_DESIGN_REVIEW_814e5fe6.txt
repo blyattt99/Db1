@@ -1,0 +1,84 @@
+DEBOOGER DB.135 — PREMIUM VISUAL REDESIGN REVIEW
+
+SOURCE: DB.135.html. Review the actual existing interface on desktop and mobile.
+
+STOP RULE: DO NOT EDIT CODE, CREATE A BUILD, OR EXECUTE ANY BUILD INSTRUCTIONS UNTIL I EXPLICITLY SAY GO. This file requests recommendations and a design plan only.
+
+GOAL
+Redesign DEBOOGER to feel like top-tier professional design software: exceptionally polished, easy to use, quick, spacious where needed, compact where space matters, and visually consistent. Give your own recommendations, including ideas better than mine. Do not make generic promises: specify exactly what you would change.
+
+DESIGN RULES
+- Keep the existing Inter font throughout the entire application, using thoughtful variable weights.
+- Light mode only. Do not add dark mode or a dark-mode toggle.
+- Keep DB.135 a single standalone HTML/CSS/JavaScript application. Never convert to React, Vite, JSX, TSX, or any other framework.
+- Preserve existing project compatibility, working features, design identity where useful, and the existing mobile preview viewport, zoom, and panning behavior.
+- Use high-quality SVG graphics, consistent icons, elegant microinteractions, refined progress displays, and smooth motion that improves clarity without slowing the interface.
+- Remove visual clutter: excessive buttons, pills, repeated labels, large headings, long descriptions, oversized controls, needless cards, and unused space. Keep concise, plain-English UI text.
+- Buttons are allowed when useful, but combine secondary actions into logical dropdowns, contextual toolbars, or collapsible groups. Keep key actions easy to reach.
+
+INSPECT AND RECOMMEND
+
+1. MAIN WORKSPACE AND TOPBAR
+- Should Upload and Viewer be merged into one main workspace, with a centered upload area when no project is loaded?
+- Should the preview window or overall page layout change? Explain the benefits and risks first.
+- Does the topbar Design page duplicate the Design inspector? Should they merge, remain separate, or be reorganized?
+- Reconsider navigation, tabs, page switching, project storage, file selection, and upload flow so users do fewer steps.
+- Recommend a full visual refresh of the topbar, navigation, toolbar, popups, dropdowns, menus, and modals, including heights, spacing, placement, and transitions.
+
+2. DESKTOP PANELS
+- Determine whether right-side drawers, resizable inspectors, floating panels, or another arrangement is easiest to use.
+- Recommend exact desktop panel widths, including for ultrawide monitors, and explain how the preview responds when a panel opens.
+- Redesign Audit, Edit, Design, Functions, and Captures with consistent typography, spacing, grouped controls, and fast opening.
+
+3. MOBILE EDITING
+- Compare a side drawer, expandable bottom sheet, fullscreen inspector, contextual toolbar, and any better combination.
+- Recommend one clear mobile approach. Explain touch selection, multiple selection, drag, resize, text editing, colors, fonts, spacing, page navigation, Undo/Redo, copy/paste, and delete.
+- Keep controls reachable without unnecessarily hiding the preview. Do not alter the existing mobile preview's opening mode, viewport, panning, or zoom.
+
+4. AUDIT — COMPACT, ACCURATE, PREMIUM
+- Make issue rows/cards slightly shorter with tight, readable spacing: severity marker, concise title, exact location, one short explanation, and compact Fix/Locate actions where meaningful. Put technical details in expandable content.
+- Use restrained severity colors: Critical red, High orange, Medium amber, Low blue, Suggestions muted gray. Prefer small colored accents, not large bright backgrounds; severity must reflect real impact.
+- Show verified code errors, runtime exceptions, visual problems, and design suggestions without fabricated results or duplicate findings.
+- Integrate developer-style diagnostics into the SAME Audit results, not a separate DevTools page, tab, section, or category. Include supported JavaScript/console errors, failed requests, missing resources, broken handlers/references, HTML/CSS issues, and relevant rendering or performance issues. Explain any browser security limits.
+- Distinguish Verified, Suspected, and Not Tested. Offer Fix only when a real safe repair can be made; otherwise show a short recommendation. Recheck the affected issue after a fix. Never use fake Fix actions.
+- Keep the 0–100 score evidence-based. Use premium motion only for actual scanning and progress, never simulated activity.
+
+5. EDIT — DIRECT, EASY VISUAL EDITING
+- Recommend simpler controls for clicking and highlighting elements, drag-moving, resizing, inline text editing, multi-selection, grouping, section moving, copy/paste, delete, and multi-step Undo/Redo.
+- Show how users choose whether an edit affects one element, matching elements, a section, a page, or the entire project.
+- Group font family, variable weight, size, HEX colors, spacing, alignment, borders, dimensions, and positioning logically. Use compact contextual tools and collapsible advanced settings.
+- Remove empty or duplicate controls; do not remove working functionality to make the UI look simpler.
+
+6. DESIGN — REAL STYLING, NOT DUPLICATE CONTROLS
+- Organize controls for project, page, section, component, and selected element, with direct editing in the preview.
+- Improve palettes, HEX input, type choices, weights, dimensions, lines, and spacing. Explain how Design and Edit should share functionality without duplicating it.
+- Make Locate/Show navigate to the exact element, highlight it, and provide a clear return path.
+
+7. FUNCTIONS, TOOLS, AND CAPTURES
+- Identify every unnecessary, broken, duplicate, or poorly placed Tools option; recommend keep, combine, relocate, repair, or remove.
+- Recommend compact Functions testing by actual page and feature, with true Passed, Failed, Blocked, and Not Tested states; real test progress, not fake animations or results.
+- Review Captures, snapshots, file management, and related modals for improved layout and fewer steps.
+
+8. PREMIUM GRAPHICS AND MOTION
+- Specify practical improvements for iconography, selection outlines, handles, audit severity, progress, panel motion, menu transitions, drag feedback, loading/saving feedback, and page switching.
+- Favor crisp, contemporary visuals and restrained motion; prioritize response speed and clarity over decorative effects.
+
+CLEAN IMPLEMENTATION PRINCIPLES FOR THE LATER BUILD
+- One implementation per feature. No duplicate handlers, fake functions, patches, dead or hidden legacy code, or unnecessary CSS overrides.
+- When replacing features, trace dependencies and remove old implementations cleanly without breaking usage.
+- Avoid new heavy dependencies, excessive animations, and unnecessary descriptive text.
+- Do not execute any of these changes yet.
+
+RESPONSE REQUIRED NOW — RECOMMENDATIONS ONLY
+Give me a concise, clearly organized report with:
+1. What is currently cluttered, outdated, confusing, or broken (separate verified findings from opinions).
+2. Proposed main layout, Upload/Viewer integration, topbar, and Design-page decision.
+3. Exact recommended desktop panel widths and workspace behavior.
+4. Best mobile inspector approach and touch-editing behavior.
+5. Exact redesign of Audit, Edit, Design, Functions, Tools, Captures, popups, dropdowns, and modals.
+6. What controls to keep, combine, move, remove, or repair.
+7. Specific graphic, typography, color, and motion improvements.
+8. What existing behavior will remain unchanged.
+9. A numbered implementation plan, with the visual redesign FIRST and other build instructions only AFTER approval.
+
+Be specific and selective. Use simple English, short explanations, and no filler. Start the visual assessment immediately. WAIT FOR MY GO BEFORE EDITING OR CREATING FILES.

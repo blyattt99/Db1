@@ -741,6 +741,18 @@ async function createApp() {
     }
   });
 
+  // Serve static public files and direct ZIP download before Vite SPA catch-all
+  const publicDir = path.resolve(__dirname, 'public');
+  app.get('/DB.136.zip', (_req, res) => {
+    const zipPath = path.join(publicDir, 'DB.136.zip');
+    res.download(zipPath, 'DB.136.zip', (err) => {
+      if (err && !res.headersSent) {
+        res.status(404).json({ error: 'DB.136.zip not found' });
+      }
+    });
+  });
+  app.use(express.static(publicDir));
+
   // Serve Vite in dev or static dist in production
   const isProduction = process.env.NODE_ENV === 'production';
   if (!isProduction) {
