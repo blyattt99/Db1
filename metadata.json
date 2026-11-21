@@ -1,0 +1,6 @@
+{
+  "name": "GitHub Connect",
+  "description": "Connect your GitHub account via OAuth 2.0 to inspect repositories, branches, commits, pull requests, and issues.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
